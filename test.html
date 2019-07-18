@@ -3,16 +3,22 @@
 	<head>
 	<meta charset="utf-8">
 		<title>JavaScript</title>
+
+		<script src="jsHelloword.js"></script>
+
 		<script>
 			function displayDate(){
 				document.getElementById("demo").innerHTML=Date();
 			}
 
-			function change_HTML(){
+			function changeHTML(){
 				x = document.getElementById("id_get_test");
 				x.innerHTML = "change HTML";
 			}
-			
+			function changeHtmlColor(){
+				x = document.getElementById("color");
+				x.style.color = "#ff0000"
+			}
 		</script>
 		</head>
 	<body>
@@ -22,9 +28,14 @@
 		<script>document.write("<h1> h1 标签</h1>")</script>
 		<button type="button" onclick="displayDate()">显示日期</button>
 
-
+		changeHtmlColor
 		<p id="id_get_test"> id_get_test</p>
 		<button type="button" onclick="change_HTML()">更改HTML</button>
+
+
+		<p id="color"> color</p>
+		<button type="button" onclick="changeHtmlColor()">更改HTML</button>
+
 
 	</body>
 </html>
