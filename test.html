@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
-<script>
-function displayDate(){
-	document.getElementById("demo").innerHTML=Date();
-}
-</script>
-</head>
-<body>
+	<head>
+	<meta charset="utf-8">
+		<title>JavaScript</title>
+		<script>
+			function displayDate(){
+				document.getElementById("demo").innerHTML=Date();
+			}
 
-<h1>我的第一个 JavaScript 程序</h1>
-<p id="demo">这是一个段落</p>
+			function change_HTML(){
+				x = document.getElementById("id_get_test");
+				x.innerHTML = "change HTML";
+			}
+			
+		</script>
+		</head>
+	<body>
 
-<button type="button" onclick="displayDate()">显示日期</button>
+		<h1>我的第一个 JavaScript 程序</h1>
+		<p id="demo">这是一个段落</p>
+		<script>document.write("<h1> h1 标签</h1>")</script>
+		<button type="button" onclick="displayDate()">显示日期</button>
 
-</body>
+
+		<p id="id_get_test"> id_get_test</p>
+		<button type="button" onclick="change_HTML()">更改HTML</button>
+
+	</body>
 </html>
