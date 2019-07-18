@@ -10,3 +10,5 @@
   */
  var obj = new Object();
  console.log(1 + obj );
+ console.log(1 + obj );
+
